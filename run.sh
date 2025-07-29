@@ -15,3 +15,4 @@ export NCCL_ASYNC_ERROR_HANDLING=1
 #     --config_file fsdp_config.yaml
 
 FORCE_TORCHRUN=1 NNODES=1 NODE_RANK=0 MASTER_ADDR="100.64.34.144" MASTER_PORT=29888 python -m llamafactory.cli train qwen3-14b-fsdp.yaml
+NODE_RANK=0 PYTORCH_CUDA_ALLOC_CONF=max_split_size_mb:128 NCCL_ASYNC_ERROR_HANDLING=1 FORCE_TORCHRUN=1 NNODES=4 MASTER_ADDR="100.64.34.144" MASTER_PORT=29888 python -m llamafactory.cli train qwen3-14b-fsdp.yaml > log.txt 2>&1
