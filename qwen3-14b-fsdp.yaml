@@ -47,7 +47,7 @@ dataloader_pin_memory: false
 dataloader_num_workers: 8
 
 # 保存策略
-output_dir: /scratch/nishang/verl_checkpoint/mid-train/test-qwen-14b-base-v1-32k
+output_dir: /scratch/nishang/verl_checkpoint/mid-train/test-qwen-14b-base-v1-32k-pad-tok
 save_strategy: steps
 save_steps: 50
 save_total_limit: 3
