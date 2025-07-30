@@ -1,5 +1,5 @@
 # 模型设置
-model_name_or_path: /scratch/nishang/models/Qwen3-14B-Base
+model_name_or_path: /scratch/nishang/models/Qwen3-14B-Base-add-pad-tok
 finetuning_type: full
 stage: pt
 
