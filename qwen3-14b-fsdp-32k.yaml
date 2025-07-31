@@ -53,5 +53,5 @@ save_steps: 50
 save_total_limit: 3
 
 report_to: wandb
-run_name: qwen-14b-base-mid-train-v1-32k
+run_name: qwen-14b-base-mid-train-v1-32k-pad-tok
 logging_steps: 1
